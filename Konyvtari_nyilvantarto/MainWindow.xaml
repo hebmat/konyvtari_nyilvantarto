@@ -5,12 +5,44 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Konyvtari_nyilvantarto"
         mc:Ignorable="d"
-        Title="Könyvtári nyilvántartó" Height="600" Width="800"
-        WindowStyle="None"
-        AllowsTransparency="True"
-        WindowStartupLocation="CenterScreen">
-    
+            Title="Könyvtári nyilvántartó" Height="600" Width="800"
+    WindowStyle="None"
+    AllowsTransparency="True"
+    WindowStartupLocation="CenterScreen">
+
     <Grid>
+        <StackPanel Background="Gray"
+                Width="150"
+                Orientation="Vertical"
+                HorizontalAlignment="Left">
+
+            <Menu Height="500"
+              Background="Transparent"
+              Margin="0,50,0,0">
+
+                <Menu.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <VirtualizingStackPanel Orientation="Vertical"/>
+
+                    </ItemsPanelTemplate>
+                </Menu.ItemsPanel>
+
+                <MenuItem Header="menu1">
+                </MenuItem>
+                <MenuItem Header="menu2">
+                </MenuItem>
+                <MenuItem Header="menu3">
+                </MenuItem>
+                <MenuItem Header="menu4">
+                </MenuItem>
+                <MenuItem Header="menu5"
+                          >
+                </MenuItem>
+
+
+            </Menu>
+        </StackPanel>
+
 
     </Grid>
 </Window>

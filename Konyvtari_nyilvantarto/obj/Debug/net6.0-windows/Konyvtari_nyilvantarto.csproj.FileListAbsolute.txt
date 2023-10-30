@@ -18,3 +18,4 @@ F:\suli\Projectmunka\Konyvtari_nyilvantarto\obj\Debug\net6.0-windows\refint\Kony
 F:\suli\Projectmunka\Konyvtari_nyilvantarto\obj\Debug\net6.0-windows\Konyvtari_nyilvantarto.pdb
 F:\suli\Projectmunka\Konyvtari_nyilvantarto\obj\Debug\net6.0-windows\Konyvtari_nyilvantarto.genruntimeconfig.cache
 F:\suli\Projectmunka\Konyvtari_nyilvantarto\obj\Debug\net6.0-windows\ref\Konyvtari_nyilvantarto.dll
+F:\suli\Projectmunka\Konyvtari_nyilvantarto\obj\Debug\net6.0-windows\Templates.baml
