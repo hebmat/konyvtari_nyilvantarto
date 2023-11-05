@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Konyvtari_nyilvantarto"
+         xmlns:View="clr-namespace:Konyvtari_nyilvantarto.View"
         mc:Ignorable="d"
             Title="Könyvtári nyilvántartó" Height="600" Width="800"
     WindowStyle="None"
@@ -11,6 +12,11 @@
     WindowStartupLocation="CenterScreen">
 
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
         <StackPanel Background="Gray"
                 Width="150"
                 Orientation="Vertical"
@@ -27,7 +33,7 @@
                     </ItemsPanelTemplate>
                 </Menu.ItemsPanel>
 
-                <MenuItem Header="menu1">
+                <MenuItem Header="menu1" Click= "MenuItem_Click" x:Name="Add">
                 </MenuItem>
                 <MenuItem Header="menu2">
                 </MenuItem>
@@ -35,14 +41,15 @@
                 </MenuItem>
                 <MenuItem Header="menu4">
                 </MenuItem>
-                <MenuItem Header="menu5"
-                          >
+                <MenuItem Header="menu5">
                 </MenuItem>
 
 
             </Menu>
         </StackPanel>
-
+        <ContentControl x:Name="CC" Grid.Column="1">
+            
+        </ContentControl>
 
     </Grid>
 </Window>
