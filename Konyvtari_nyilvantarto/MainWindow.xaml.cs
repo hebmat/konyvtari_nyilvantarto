@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Konyvtari_nyilvantarto.ViewModels;
+using Microsoft.Data.Sqlite;
 
 namespace Konyvtari_nyilvantarto
 {
@@ -23,6 +25,8 @@ namespace Konyvtari_nyilvantarto
         public MainWindow()
         {
             InitializeComponent();
+            CreateTable databaseManager = new CreateTable();
+            databaseManager.InitializeDatabase();
         }
     }
 }
