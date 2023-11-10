@@ -4,52 +4,47 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Konyvtari_nyilvantarto"
-         xmlns:View="clr-namespace:Konyvtari_nyilvantarto.View"
+        xmlns:View="clr-namespace:Konyvtari_nyilvantarto.View"
         mc:Ignorable="d"
-            Title="Könyvtári nyilvántartó" Height="600" Width="800"
-    WindowStyle="None"
-    AllowsTransparency="True"
-    WindowStartupLocation="CenterScreen">
+        Title="Könyvtári nyilvántartó" Height="600" Width="800"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        WindowStartupLocation="CenterScreen">
 
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        
-        <StackPanel Background="Gray"
-                Width="150"
-                Orientation="Vertical"
-                HorizontalAlignment="Left">
+
+        <!-- Bal Oldali Menü -->
+        <StackPanel Background="#2C3E50"
+                    Width="150"
+                    Orientation="Vertical"
+                    HorizontalAlignment="Left">
 
             <Menu Height="500"
-              Background="Transparent"
-              Margin="0,50,0,0">
+                  Background="Transparent"
+                  Margin="0,50,0,0">
 
                 <Menu.ItemsPanel>
                     <ItemsPanelTemplate>
                         <VirtualizingStackPanel Orientation="Vertical"/>
-
                     </ItemsPanelTemplate>
                 </Menu.ItemsPanel>
 
-                <MenuItem Header="menu1" Click= "MenuItem_Click" x:Name="Add">
-                </MenuItem>
-                <MenuItem Header="menu2">
-                </MenuItem>
-                <MenuItem Header="menu3">
-                </MenuItem>
-                <MenuItem Header="menu4">
-                </MenuItem>
-                <MenuItem Header="menu5">
-                </MenuItem>
-
-
+                <!-- Menu Items -->
+                <MenuItem Header="Add New Book" Click="MenuItem_Click" x:Name="Add"/>
+                <MenuItem Header="Menu 2"/>
+                <MenuItem Header="Menu 3"/>
+                <MenuItem Header="Menu 4"/>
+                <MenuItem Header="Menu 5"/>
             </Menu>
         </StackPanel>
-        <ContentControl x:Name="CC" Grid.Column="1">
-            
-        </ContentControl>
 
+        <!-- Right Side Content -->
+        <Border Grid.Column="1" Background="#ECF0F1">
+            <ContentControl x:Name="CC"/>
+        </Border>
     </Grid>
 </Window>
