@@ -32,7 +32,7 @@ namespace Konyvtari_nyilvantarto.Models
             set => SetProperty(ref description, value);
         }
 
-        public Books(string? title, string? author, string? category = null, string? description = null)
+        public Books(string? title, string? author, string? category, string? description)
         {
             Title = title;
             Author = author;

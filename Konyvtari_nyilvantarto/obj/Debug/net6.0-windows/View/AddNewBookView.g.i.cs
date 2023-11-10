@@ -47,13 +47,13 @@ namespace Konyvtari_nyilvantarto.View {
         /// InitializeComponent
         /// </summary>
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "7.0.11.0")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "7.0.12.0")]
         public void InitializeComponent() {
             if (_contentLoaded) {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Konyvtari_nyilvantarto;V1.0.0.0;component/view/addnewbookview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Konyvtari_nyilvantarto;component/view/addnewbookview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\View\AddNewBookView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
@@ -63,7 +63,7 @@ namespace Konyvtari_nyilvantarto.View {
         }
         
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "7.0.11.0")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "7.0.12.0")]
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Never)]
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Design", "CA1033:InterfaceMethodsShouldBeCallableByChildTypes")]
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
