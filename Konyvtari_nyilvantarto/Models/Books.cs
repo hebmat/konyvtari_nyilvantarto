@@ -4,9 +4,41 @@ namespace Konyvtari_nyilvantarto.Models
 {
     class Books : ObservableObject
     {
-        public string? title;
-        public string? author;
-        public string? category;
-        public string? description;
+        private string? title;
+        private string? author;
+        private string? category;
+        private string? description;
+
+        public string? Title 
+        {
+            get => title;
+            set => SetProperty(ref title, value);
+        }
+
+        public string? Author 
+        { 
+            get => author;
+            set => SetProperty(ref author, value);
+        }
+        
+        public string? Category 
+        { 
+            get => category;
+            set => SetProperty(ref category, value);
+        }
+        public string? Description
+        { 
+            get => description;
+            set => SetProperty(ref description, value);
+        }
+
+        public Books(string? title, string? author, string? category = null, string? description = null)
+        {
+            Title = title;
+            Author = author;
+            Category = category;
+            Description = description;
+        }
+
     }
 }

@@ -53,7 +53,7 @@ namespace Konyvtari_nyilvantarto.View {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Konyvtari_nyilvantarto;component/view/addnewbookview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Konyvtari_nyilvantarto;V1.0.0.0;component/view/addnewbookview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\View\AddNewBookView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
